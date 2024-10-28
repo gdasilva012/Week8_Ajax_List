@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid-Term</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="MidTermStyle.css">
+</head>
+<body>
+    <a href="separate_page.html">To-do Page</a>
+    <p>Greeting based on time of day:</p>
+    <p id="demo"></p>
+    <script src="MidTermScript.js">
+
+    </script>
+    <div id="div1">
+        <p style="color: darkblue">Hobbies</p>
+        <ol type = "1">
+            <li>Bass guitar</li>
+            <li>Gym</li>
+            <li>Hiking</li>
+          </ol>
+    </div>
+
+    <div id="div2">
+        <table>
+            <tr>
+              <th>Education</th>
+              <th>Work Experience</th>
+              <th>Projects</th>
+            </tr>
+            <tr>
+              <td>Housatonic CC</td>
+              <td>Painter</td>
+              <td>Groundwork</td>
+            </tr>
+            <tr>
+              <td>SCSU</td>
+              <td>Barback</td>
+              <td>Band</td>
+            </tr>
+          </table>
+    </div>
+
+    <div id="div3">
+        <h3>Additional Hobbies</h3>
+        <h4>Foraging:</h4>
+        <img id="forage" src="foraging.png" alt="foraging" width="100" height="100">
+        <script src="MidTermScript.js">
+        </script>
+        <h4>Soccer:</h4>
+        <img src="soccer.png" alt="foraging" width="100" height="100">
+       
+    </div>
+
+    <button onclick="showHide()">Show/hide Content</button>
+    <div id ="div4">
+        Content.
+    </div>
+    <script src="MidTermScript.js">
+    </script>
+
+    <p id="demo2">Watch me grow!</p>
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='50px'">Click to make above text larger</button>
+    <br>
+    <button type="button" id="buttons">Player 1: N/A</button>
+    <script>
+      const button = document.getElementById("buttons");
+      button.addEventListener("click", updateName);
+      function updateName() {
+      const name = prompt("Enter a new name");
+      button.textContent = `Player 1: ${name}`;
+      }
+    </script>
+    <script src="MidTermScript.js">
+    </script>
+</body>
+</html>
